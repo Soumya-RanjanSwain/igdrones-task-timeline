@@ -1,0 +1,429 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#header img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+}
+#leftbtn{
+    opacity: 0.2;
+}
+
+#leftbtn:hover{
+    opacity: 1;
+}
+#rightbtn{
+    opacity: 0.2;
+}
+
+#rightbtn:hover{
+    opacity: 1;
+}
+.slidecontainer {
+    width: 80%;
+    margin: auto;
+    position: relative;
+}
+
+.slider:hover {
+    opacity: 1;
+}
+
+.slider {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    height: 15px;
+    border-radius: 5px;
+    background: linear-gradient(to right,
+            #b3b3b3 0%, #b3b3b3 100%);
+    background-image:
+        linear-gradient(to right, #b3b3b3 0%, #b3b3b3 100%),
+        radial-gradient(circle, #b3b3b3 20%, transparent 0%),
+        radial-gradient(circle, #b3b3b3 20%, transparent 0%),
+        radial-gradient(circle, #b3b3b3 20%, transparent 0%),
+        radial-gradient(circle, #b3b3b3 20%, transparent 0%),
+        radial-gradient(circle, #b3b3b3 20%, transparent 0%),
+        radial-gradient(circle, #b3b3b3 20%, transparent 0%),
+        radial-gradient(circle, #b3b3b3 20%, transparent 0%);
+    background-position:
+        0% 50%,
+        -1.6% 50%,
+        16.1% 50%,
+        32.8% 50%,
+        50% 50%,
+        66.67% 50%,
+        83.7% 50%,
+        101.5% 50%;
+    background-size:
+        100% 3px,
+        50px 50px,
+        50px 50px,
+        50px 50px,
+        50px 50px,
+        50px 50px,
+        50px 50px,
+        50px 50px;
+    background-repeat: no-repeat;
+    outline: none;
+    opacity: 0.7;
+    transition: opacity .2s;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 19px;
+    height: 19px;
+    border-radius: 50%;
+    background-color: white;
+    cursor: pointer;
+    border: 3px solid #4186fc;
+    box-shadow: 0px 0px 0px 2px #4186fc;
+    transition: transform 0.2s ease-in-out;
+}
+
+.slider::-webkit-slider-thumb:hover {
+    transform: scale(1.3); 
+}
+
+.slider::-moz-range-thumb {
+    width: 21px;
+    height: 21px;
+    border-radius: 50%;
+    background-color: white;
+    cursor: pointer;
+    border: 3px solid #4186fc;
+    box-shadow: 0px 0px 0px 2px #4186fc;
+    transition: transform 0.2s ease-in-out;
+}
+
+.slider::-moz-range-thumb:hover {
+    transform: scale(1.3); 
+}
+
+
+
+#header {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 50px;
+    display: flex;
+    align-items: center;
+    padding: 3rem;
+    min-height: 70%; 
+}
+
+.labels {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    top: -20px;
+    opacity: 0.9;
+}
+#header img {
+    border-radius: 50%;
+    border: 1px solid black;
+    max-width: 150px; 
+    display: block;
+    margin: 0 auto;
+}
+
+#header div {
+    text-align: center;
+}
+
+.labels span {
+    font-size: 15px;
+}
+
+.labels:hover {
+    opacity: 1;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .labels {
+        font-size: 10px;
+        text-align: center;
+    }
+
+    #header {
+        flex-direction: column;
+        align-items: center;
+        margin: 5px 2rem;
+        padding: 0;
+        min-height: 320px;
+    }
+
+    #header img {
+        max-width: 100px;
+    }
+    #leftbtn, #rightbtn {
+        font-size: 1.5rem;
+    }
+
+    .slider {
+        width: 100%;
+        background: linear-gradient(to right,
+                #b3b3b3 0%, #b3b3b3 100%);
+        background-image:
+            linear-gradient(to right, #b3b3b3 0%, #b3b3b3 100%),
+            radial-gradient(circle, #b3b3b3 17%, transparent 0%),
+            radial-gradient(circle, #b3b3b3 17%, transparent 0%),
+            radial-gradient(circle, #b3b3b3 17%, transparent 0%),
+            radial-gradient(circle, #b3b3b3 17%, transparent 0%),
+            radial-gradient(circle, #b3b3b3 17%, transparent 0%),
+            radial-gradient(circle, #b3b3b3 17%, transparent 0%),
+            radial-gradient(circle, #b3b3b3 17%, transparent 0%);
+        background-position:
+            0% 50%,
+            -6% 50%,
+            13% 50%,
+            31.5% 50%,
+            49% 50%,
+            67.8% 50%,
+            86.7% 50%,
+            105.5% 50%;
+        background-size:
+            100% 3px,
+            50px 50px,
+            50px 50px,
+            50px 50px,
+            50px 50px,
+            50px 50px,
+            50px 50px,
+            50px 50px;
+        background-repeat: no-repeat;
+        outline: none;
+        opacity: 0.7;
+        transition: opacity .2s;
+    }
+
+    .slider::-webkit-slider-thumb {
+        width: 13px;
+        height: 13px; 
+        border: 2px solid #4186fc;
+    }
+    
+}
+
+
+@media only screen and (min-width: 600px) {
+    .labels {
+        font-size: 10px;
+        text-align: center;
+    }
+    #header {
+        flex-direction: column;
+        align-items: center;
+        margin: 5px 2rem;
+        padding: 0;
+        min-height: 300px;
+    }
+
+    #header img {
+        max-width: 120px;
+    }
+    #leftbtn, #rightbtn {
+        font-size: 1.5rem;
+    }
+    #header #details{
+        max-width: 300px;
+    }
+    .slider {
+        width: 100%;
+        background: linear-gradient(to right,
+                #b3b3b3 0%, #b3b3b3 100%);
+        background-image:
+            linear-gradient(to right, #b3b3b3 0%, #b3b3b3 100%),
+            radial-gradient(circle, #b3b3b3 17%, transparent 0%),
+            radial-gradient(circle, #b3b3b3 17%, transparent 0%),
+            radial-gradient(circle, #b3b3b3 17%, transparent 0%),
+            radial-gradient(circle, #b3b3b3 17%, transparent 0%),
+            radial-gradient(circle, #b3b3b3 17%, transparent 0%),
+            radial-gradient(circle, #b3b3b3 17%, transparent 0%),
+            radial-gradient(circle, #b3b3b3 17%, transparent 0%);
+        background-position:
+            0% 50%,
+            -3.4% 50%,
+            14.5% 50%,
+            32.5% 50%,
+            50% 50%,
+            67.8% 50%,
+            85.5% 50%,
+            103.5% 50%;
+        background-size:
+            100% 3px,
+            50px 50px,
+            50px 50px,
+            50px 50px,
+            50px 50px,
+            50px 50px,
+            50px 50px,
+            50px 50px;
+        background-repeat: no-repeat;
+        outline: none;
+        opacity: 0.7;
+        transition: opacity .2s;
+    }
+
+    .slider::-webkit-slider-thumb {
+        width: 13px;
+        height: 13px; 
+        border: 2px solid #4186fc;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .labels {
+        font-size: 10px;
+        text-align: center;
+    }
+    #header {
+        flex-direction: row;
+        align-items: center;
+        margin: 5px 2rem;
+        padding: 0;
+        min-height: 300px;
+    }
+
+    #header img {
+        max-width: 120px;
+    }
+    #leftbtn, #rightbtn {
+        font-size: 2rem;
+    }
+    #header #details{
+        max-width: 300px;
+    }
+
+    .slider {
+        width: 100%;
+        background: linear-gradient(to right,
+                #b3b3b3 0%, #b3b3b3 100%);
+        background-image:
+            linear-gradient(to right, #b3b3b3 0%, #b3b3b3 100%),
+            radial-gradient(circle, #b3b3b3 17%, transparent 0%),
+            radial-gradient(circle, #b3b3b3 17%, transparent 0%),
+            radial-gradient(circle, #b3b3b3 17%, transparent 0%),
+            radial-gradient(circle, #b3b3b3 17%, transparent 0%),
+            radial-gradient(circle, #b3b3b3 17%, transparent 0%),
+            radial-gradient(circle, #b3b3b3 17%, transparent 0%),
+            radial-gradient(circle, #b3b3b3 17%, transparent 0%);
+        background-position:
+            0% 50%,
+            -3.4% 50%,
+            14.5% 50%,
+            32.5% 50%,
+            50% 50%,
+            67.8% 50%,
+            85.5% 50%,
+            103.5% 50%;
+        background-size:
+            100% 3px,
+            50px 50px,
+            50px 50px,
+            50px 50px,
+            50px 50px,
+            50px 50px,
+            50px 50px,
+            50px 50px;
+        background-repeat: no-repeat;
+        outline: none;
+        opacity: 0.7;
+        transition: opacity .2s;
+    }
+
+    .slider::-webkit-slider-thumb {
+        width: 13px;
+        height: 13px; 
+        border: 2px solid #4186fc;
+    }
+}
+
+
+@media only screen and (min-width: 992px) {
+    #leftbtn, #rightbtn {
+        font-size: 2.5rem;
+    }
+    #header #details{
+        max-width: 400px;
+    }
+    .slider {
+        -webkit-appearance: none;
+        appearance: none;
+        width: 100%;
+        height: 15px;
+        border-radius: 5px;
+        background: linear-gradient(to right,
+                #b3b3b3 0%, #b3b3b3 100%);
+        background-image:
+            linear-gradient(to right, #b3b3b3 0%, #b3b3b3 100%),
+            radial-gradient(circle, #b3b3b3 20%, transparent 0%),
+            radial-gradient(circle, #b3b3b3 20%, transparent 0%),
+            radial-gradient(circle, #b3b3b3 20%, transparent 0%),
+            radial-gradient(circle, #b3b3b3 20%, transparent 0%),
+            radial-gradient(circle, #b3b3b3 20%, transparent 0%),
+            radial-gradient(circle, #b3b3b3 20%, transparent 0%),
+            radial-gradient(circle, #b3b3b3 20%, transparent 0%);
+        background-position:
+            0% 50%,
+            -1.6% 50%,
+            16.1% 50%,
+            32.8% 50%,
+            50% 50%,
+            66.67% 50%,
+            83.7% 50%,
+            101.5% 50%;
+        background-size:
+            100% 3px,
+            50px 50px,
+            50px 50px,
+            50px 50px,
+            50px 50px,
+            50px 50px,
+            50px 50px,
+            50px 50px;
+        background-repeat: no-repeat;
+        outline: none;
+        opacity: 0.7;
+        transition: opacity .2s;
+    }
+
+    .slider::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        appearance: none;
+        width: 19px;
+        height: 19px;
+        border-radius: 50%;
+        background-color: white;
+        cursor: pointer;
+        border: 3px solid #4186fc;
+        box-shadow: 0px 0px 0px 2px #4186fc;
+        transition: transform 0.2s ease-in-out;
+    }
+}
+
+
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+}
+
+#header {
+    flex-grow: 1;
+    text-align: center;
+}
+
+#leftbtn, #rightbtn {
+    cursor: pointer;
+}
+

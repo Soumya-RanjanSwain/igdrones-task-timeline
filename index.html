@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IGDrones</title>
+    <link rel="icon" href="images/icon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+    <div class="container" style="margin:  0 10%;">
+    <i id="leftbtn" class="fa-solid fa-chevron-left"></i>
+    <div id="header">
+        <div>
+            <img src="images/image1.jpeg" alt="image">
+        </div>
+        <div style="display: flex; justify-items: center; flex-direction: column;">
+            <h1 id="month">April 2018</h1>
+            <div id="details" style=" font-size: 16px; line-height: 1.2; text-align: center;">
+                <span>We are one of India's leading drone firms in providing end-to-end Drone Solutions.</span>
+            </div>
+        </div>
+    </div>
+    <i id="rightbtn" class="fa-solid fa-chevron-right"></i>
+</div>
+    <div class="slidecontainer">
+        <div class="labels" style="margin-bottom: 1%; margin-top: 4%;">
+            <span>April 2018</span>
+            <span>April 2019</span>
+            <span>April 2020</span>
+            <span>April 2021</span>
+            <span>April 2022</span>
+            <span>April 2023</span>
+            <span>April 2024</span>
+        </div>
+        
+        <input type="range" min="1" max="7" value="1" class="slider" id="myRange">
+    </div>
+
+</body>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+    integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="index.js"></script>
+
+</html>
